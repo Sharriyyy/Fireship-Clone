@@ -1,0 +1,38 @@
+---
+import {
+  Astronav,
+  MenuItems,
+  MenuIcon,
+  Dropdown,
+  DropdownItems,
+  DropdownSubmenu,
+} from "astro-navbar";
+---
+
+<header class="lg:flex p-5 gap-5">
+  <Astronav>
+    <div class="flex w-full justify-between">
+      <a href="/"
+        ><img
+          class="h-10 w-10"
+          src="https://seeklogo.com/images/F/fireship-io-logo-A2EC33F21F-seeklogo.com.png"
+          alt=""
+        /></a
+      >
+      <div class="block md:hidden"><MenuIcon class="w-4 h-4 text-white" /></div>
+    </div>
+    <MenuItems class="hidden lg:flex">
+      <ul class="flex flex-col lg:flex-row lg:gap-5">
+        <li>
+          <button
+            class="font-display text-base font-normal text-green-500 border-green-400 border rounded-md px-2 py-1 hover:drop-shadow-[0_0_9px_rgba(34,197,94,0.9)]"
+            >PRO</button
+          >
+        </li>
+        <li class="mt-1"><a href="/">Home</a></li>
+        <li class="mt-1"><a href="/projects">Project</a></li>
+        <l class="mt-1"><a href="/about">About</a></l>
+      </ul>
+    </MenuItems>
+  </Astronav>
+</header>
